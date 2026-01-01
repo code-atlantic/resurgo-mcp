@@ -1,6 +1,6 @@
 {
   "name": "resurgo-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Resurgo MCP Server - Capture notes, links, and ideas to resurface later. Your AI assistant remembers what matters.",
   "main": "./build/index.js",
   "module": true,

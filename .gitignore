@@ -1,5 +1,0 @@
-node_modules
-build
-*.log
-.turbo
-.DS_Store
