@@ -1,0 +1,64 @@
+{
+  "name": "resurgo-mcp",
+  "version": "1.0.0",
+  "description": "Resurgo MCP Server - Capture notes, links, and ideas to resurface later. Your AI assistant remembers what matters.",
+  "main": "./build/index.js",
+  "module": true,
+  "type": "module",
+  "bin": {
+    "resurgo-mcp": "./build/index.js"
+  },
+  "exports": {
+    ".": "./build/index.js"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules build",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "resurgo",
+    "knowledge-management",
+    "pkm",
+    "note-taking",
+    "spaced-repetition",
+    "claude",
+    "ai-assistant",
+    "productivity",
+    "resurfacing"
+  ],
+  "author": "Code Atlantic LLC",
+  "license": "MIT",
+  "homepage": "https://resurgo.app",
+  "bugs": {
+    "url": "https://github.com/code-atlantic/resurgo-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-atlantic/resurgo-mcp"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
